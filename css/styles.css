@@ -1,0 +1,20 @@
+:root {
+--primary-text-color: #303030;
+--accent-text-color: #FF6C00;
+--first-text-color: #555555;
+--second-text-color: #ffffff;
+--background-color: #F7F7F7;
+} */
+
+body {
+font-family: Open Sans, sans-serif;
+color: var(--primary-text-color);
+}
+
+.list {
+list-style: none;
+}
+.link
+{
+text-decoration: none;
+}
