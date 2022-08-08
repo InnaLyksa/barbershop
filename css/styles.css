@@ -133,14 +133,26 @@ section {
 	flex-grow: 1;
 }
 .hero-list {
-	width: 100px;
-}
-.hero-item {
 	display: flex;
+	/* flex-direction: column; */
+	justify-content: flex-end;
+
 	gap: 40px;
-	flex-direction: column-reverse;
+	
+	width: 100px;
+	
 }
+
+/* .hero-item {
+	transform: rotate(-90deg);
+	display: inline-block;
+	
+	
+}  */
+.hero-item
 .hero-link {
+	
+	
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 600;
@@ -322,6 +334,11 @@ section {
 	line-height: 1.16;
 	letter-spacing: 0.05em;
 	color: var(--primary-text-color);
+}
+.benefits-title::before {
+	content: '?';
+	display: inline-block;
+	transform: rotate(180deg);
 }
 .benefits-after-title {
 	width: 500px;
