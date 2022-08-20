@@ -88,8 +88,9 @@
 					the hands of our master, you will never be the same again. We are a team that is always "on the same wave"
 					with clients. Therefore, we are always ready to improve everyone who comes to us!
 				</p>
-				
+				<a href="#form-online">
 				<button type="button" class="about-btn btn">Online-booking</button>
+				</a>
 				
 			</div>
 				</div>
@@ -137,7 +138,9 @@
 					</li>
 				</ul>
 				</div>
+				<a href="#form-online" class="link">
 				<button type="button" class="prices-btn btn">Online-booking</button>
+				</a>
 				</div>
 			</section>
 			<!-- Benefits -->
@@ -321,7 +324,25 @@
 				<div class="container">
 			<section class="online-booking">
 				<h2 class="title online-title">Online-booking</h2>
-				<button type="button" class="online-btn btn">Send</button>
+				<form class="form-online" id="form-online">
+					<div class="online-field">
+						
+						<input type="text" name="name" id="name" class="input-online online-item" placeholder=" ">
+						<label for="name" class="input-label">Name*</label>
+					</div>
+					<div class="online-field">
+						
+						<input type="tel" name="tel" id="tel" class="input-online online-item" placeholder=" ">
+						<label for="tel" class="input-label">Phone*</label>
+					</div>
+					<div class="online-field">
+						
+						<textarea name="online-message" id="online-message" class="online-item input-online online-text" placeholder=" "></textarea>
+						<label for="online-message" class="input-label">Message</label>
+					</div>
+					<button type="submit" class="btn">Send</button>
+				</form>
+				
 			</section>
 			<section class="contact">
 				<h2 class="title contact-title">Contacts</h2>
@@ -376,14 +397,33 @@
 					<use href="./img/icons.svg#icon-btn-close"></use>
 				</svg>
 				</button>
-      </div>
+				<form class="online-modal">
+					<p class="online-modal-title"> Online-booking</p>
+					<div class="online-field">
+						
+						<input type="text" name="name" id="name-modal" class="input-online-modal online-modal-item" placeholder=" ">
+						<label for="name-modal" class="input-label">Name*</label>
+					</div>
+					<div class="online-field">
+						
+						<input type="tel" name="tel-modal" id="tel" class="input-online-modal online-modal-item" placeholder=" ">
+						<label for="tel-modal" class="input-label">Phone*</label>
+					</div>
+					<div class="online-field">
+						
+						<textarea name="online-message" id="online-message-modal" class="online-modal-item input-online-modal online-text" placeholder=" "></textarea>
+						<label for="online-message-modal" class="input-label">Message</label>
+					</div>
+					<button type="submit" class="online-btn btn">Send</button>
+				</form>
+            </div>
 				
-			</div>
+		</div>
 		
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+    AOS.init();
     </script>
     <script src="./js/modal.js"></script>
 	</body>
-</html>
+</html> 
