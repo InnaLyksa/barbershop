@@ -1,0 +1,13 @@
+.logo {
+	margin-right: 130px;
+}
+
+.logo__icon {
+	fill: $first-text-color;
+    @include transition(fill);
+    
+&:hover,
+&:focus {
+	fill: $accent-text-color;
+}
+}

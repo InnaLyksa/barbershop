@@ -1,0 +1,14 @@
+@mixin transition($one) {
+	transition-property: $one;
+	transition-duration: $trans-duration;
+	transition-timing-function: $timing-function;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+// @include

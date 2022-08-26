@@ -1,0 +1,54 @@
+.about__container {
+	display: flex;
+	gap: 30px;
+}
+.about__photo {
+	display: flex;
+	gap: 30px;
+}
+.about__contan {
+max-width: 470px;
+}
+
+.contant {
+	
+	&__title {
+		margin-bottom: $margin-bottom-text;
+		font-size: 42px;
+		line-height: 1.16;
+
+		color: $primary-text-color;
+	}
+
+	// &__pre-title {
+	// 	@extend %pre-title;
+	// 	color: $primary-text-color;
+
+	// 	margin-bottom: $margin-bottom-text;
+	// }
+
+	&__after-title {
+		// font-family: "Open Sans";
+		// font-style: normal;
+		// font-weight: 400;
+		// font-size: 18px;
+		// line-height: 1.67;
+		letter-spacing: $spacing-small;
+		color: $first-text-color;
+
+		margin-bottom: $margin-bottom-text;
+	}
+
+	&__text {
+		margin-bottom: 42px;
+		font-size: $size-small;
+		line-height: 1.86;
+		letter-spacing: $spacing-small;
+
+		color: $first-text-color;
+	}
+}
+
+.btn--black {
+	color: $primary-text-color;
+}
