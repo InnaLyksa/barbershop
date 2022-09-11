@@ -4,19 +4,59 @@ body {
 }
 img {
 	display: block;
+		width: 100%;
+	height: auto;
 }
 .container {
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
+	width: 100%;
+	
+
 	margin-left: auto;
 	margin-right: auto;
-	/* outline: 1px solid red; */
+
+	@include mobile {
+		width: 480px;
+	}
+	@include tablet {
+	
+		width: 768px;
+	}
+	@include desktop {
+		width: 1200px;
+		padding-left: 15px;
+	padding-right: 15px;
+
+	}
 }
+// .container {
+// 	width: 1200px;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	/* outline: 1px solid red; */
+// }
+// section {
+// 	padding-top: 120px;
+// 	padding-bottom: 120px;
+// 	/* outline: 1px solid green; */
+// }
+
 section {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 84px;
+	padding-bottom: 84px;
+
 	/* outline: 1px solid green; */
+
+	@include tablet {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include desktop {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 }
 .btn {
 	padding: 0 0;
@@ -76,3 +116,72 @@ section {
 .pre-title--black {
     color: $primary-text-color;
 }
+
+// body {
+// 	font-family: $font-text;
+// 	color: var(--primary-text-color);
+// }
+// img {
+// 	display: block;
+// 	max-width: 100%;
+// 	height: auto;
+// }
+
+
+// .btn {
+// 	padding: 0 0;
+// 	min-width: 160px;
+// 	height: 40px;
+// 	font-family: inherit;
+// 	font-weight: 600;
+// 	font-size: 12px;
+// 	line-height: 1.33;
+// 	letter-spacing: 0.09em;
+// 	text-transform: uppercase;
+// 	border: 1px solid #ff6c00;
+// 	border-radius: 25px;
+
+// 	background-color: transparent;
+// 	color: #ffffff;
+// }
+
+// // .contact-title, .online-title {
+// //     font-weight: 700;
+// //     font-size: 42px;
+// //     line-height: 1.16;
+// //     letter-spacing: 0.05em;
+// // }
+
+// .title {
+// 	margin-bottom: 20px;
+// 	font-family: $font-family-title;
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	font-size: 42px;
+// 	line-height: 1.16;
+// 	letter-spacing: 0.05em;
+// 	color: #ffffff;
+// }
+// .pre-title {
+// 	margin-bottom: $margin-bottom-text;
+// 	font-weight: 600;
+// 	font-size: 11px;
+// 	line-height: 1.36;
+// 	text-transform: uppercase;
+// 	display: flex;
+// 	align-items: center;
+// 	gap: 20px;
+
+// 	&::before {
+// 		content: "";
+// 		width: 60px;
+// 		height: 1px;
+// 		background-color: currentColor;
+// 	}
+// }
+// .pre-title--grey {
+// 	color: rgba(157, 164, 189, 0.6);
+// }
+// .pre-title--black {
+// 	color: $primary-text-color;
+// }

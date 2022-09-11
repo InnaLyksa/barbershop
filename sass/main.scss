@@ -1,17 +1,18 @@
-
 @import "./utils/variables";
 
 @import "./base/reset";
+
+@import "./utils/mixins";
 
 @import "./base/common";
 
 @import "./utils/placeholders";
 
-@import "./utils/mixins";
-
 @import "./components/header";
 
 @import "./components/hero";
+
+// @import "./layouts/menu";
 
 @import "./components/about";
 
@@ -25,5 +26,4 @@
 
 @import "./components/contact";
 
-@import "./components/footer";
-
+// @import "./components/footer";

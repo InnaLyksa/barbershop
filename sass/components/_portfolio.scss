@@ -1,10 +1,22 @@
-
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 
 	&__item {
-	width: calc((100% - 90px) / 4);
+		width: 100%;
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 90px) / 4);
+		}
+	}
 }
+.gallery-pre-title {
+	color: #303030;
+	margin-bottom: 70px;
+	@media screen and (min-width: 768px) {
+		margin-bottom: 40px;
+	}
 }

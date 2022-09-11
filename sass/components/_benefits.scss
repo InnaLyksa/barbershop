@@ -1,37 +1,48 @@
 .benefits__container  {
+display: flex;
+flex-direction: column-reverse;
+
+	@include desktop {
 	display: flex;
-
+	flex-direction: row;
 }
-
-// 	.benefits__pre-title {
-// 		@extend %pre-title;
-
-// 	margin-bottom: $margin-bottom-text;
-// 	color: $primary-text-color;
-// }
+}
 
 .benefits__title {
 	@extend %title ;
-
-	width: 430px;
+	
+width: 410px;
+	
 	margin-bottom: $margin-bottom-text;
 	font-size: $size-title;
 	line-height: 1.16;
 	color: $primary-text-color;
+	@include tablet {
+		width: 450px;
+	}
 
 	&::before {
 	content: "?";
 	display: inline-block;
 	transform: rotate(180deg);
+
+
 }
 }
 
 .benefits__after-title {
-	width: 500px;
+	
 	font-size: $size-text;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: $first-text-color;
+	@media screen and (max-width: 1199px){
+		margin-bottom: 44px;
+	}
+
+	@include tablet {
+width: 500px;
+	}
 }
 
 .benefits-cards {
@@ -47,12 +58,24 @@
 	width: 370px;
 }
 .benefits-list__item {
-	width: 170px;
+      width: 193px;
 	height: 133px;
 	background-color: #f7f7f7;
-	padding: 20px 20px;
+	padding: 20px 35px;
 	text-align: center;
 
+@include tablet {
+		width: 210px;
+		padding: 20px 44px;
+}
+@include desktop {
+	width: 170px;
+	padding: 20px 20px;
+	// height: 133px;
+	// background-color: #f7f7f7;
+	// padding: 20px 20px;
+	// text-align: center;
+}
 	&:nth-child(even) {
 	margin-top: 30px;
 }
