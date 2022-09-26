@@ -67,10 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		false,
 	);
-	// код ниже закрывает модалку по клику в любом месте
 
-	// overlay.addEventListener("click", function () {
-	// 	document.querySelector(".modal.active").classList.remove("active");
-	// 	this.classList.remove("active");
-	// });
+	overlay.addEventListener("click", function () {
+		document.querySelector(".modal.active").classList.remove("active");
+		this.classList.remove("active");
+	});
 }); // end ready

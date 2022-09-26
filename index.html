@@ -29,7 +29,7 @@
 						<use href="./img/icons.svg#icon-Logo"></use>
 					</svg>
 				</a>
-				<!-- <div class="menu-conteiner" id="menu-conteiner" data-menu> -->
+
 				<nav class="header__nav">
 					<ul class="header__list">
 						<li><a href="#about" class="header__item">About</a></li>
@@ -42,50 +42,42 @@
 					<a href="tel:+380441111111" class="header__tel">+38 044 111 11 11</a>
 					<button type="button" class="btn js-open-modal" data-modal="1">Online-booking</button>
 				</div>
-				<!-- </div> -->
 
-				<!-- <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-menu-open>
-					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
-						<use class="icon-menu" href="./img/icons.svg#icon-menu_40px-3"></use>
-					</svg>
-				</button> -->
-				<button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-menu-open>
+				<button class="menu-button js-open-modal" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-modal="2">
 					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
 						<use class="icon-menu" href="./img/icons.svg#icon-menu_40px-3"></use>
 					</svg>
 				</button>
 			</div>
-			<div class="mob-menu is-hidden" data-menu>
-				<div class="menu-container container">
-					<button class="menu-button-close" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-menu-close>
-						<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
-							<use class="icon-cross" href="./img/icons.svg#icon-close_40px-3"></use>
-						</svg>
-					</button>
-					<nav class="mob-menu__nav">
-						<ul class="mob-menu__list">
-							<li class="mob-menu__item"><a href="#about" class="mob-menu__link">About</a></li>
-							<li class="mob-menu__item"><a href="#services" class="mob-menu__link">Services and prices</a></li>
-							<li class="mob-menu__item"><a href="#barbers" class="mob-menu__link">Barbers</a></li>
-							<li class="mob-menu__item"><a href="#contacts" class="mob-menu__link">Contacts</a></li>
-						</ul>
-					</nav>
-					<div class="mob-connect">
-						<a href="tel:+380441111111" class="mob-menu__tel">+38 044 111 11 11</a>
+			<!-- Mобільного меню -->
 
-						<button type="button" class="mob-connect-btn btn js-open-modal" data-modal="1">Online-booking</button>
-					</div>
-					<!-- <button type="button" class="mob-connect-btn btn" data-modal-open>Online-booking</button>
-					</div> -->
-					<ul class="mob-soc__list">
-						<li class="mob-soc__item">
-							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Instagram</a>
-						</li>
-						<li class="mob-soc__item">
-							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Youtube</a>
-						</li>
+			<div class="menu-nav-mobail modal" data-modal="2">
+				<button class="menu-button-close js-modal-close" type="button">
+					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+						<use class="icon-cross" href="./img/icons.svg#icon-close_40px-3"></use>
+					</svg>
+				</button>
+				<nav class="mob-menu__nav">
+					<ul class="mob-menu__list">
+						<li class="mob-menu__item"><a href="#about" class="mob-menu__link">About</a></li>
+						<li class="mob-menu__item"><a href="#services" class="mob-menu__link">Services and prices</a></li>
+						<li class="mob-menu__item"><a href="#barbers" class="mob-menu__link">Barbers</a></li>
+						<li class="mob-menu__item"><a href="#contacts" class="mob-menu__link">Contacts</a></li>
 					</ul>
+				</nav>
+				<div class="mob-connect">
+					<a href="tel:+380441111111" class="mob-menu__tel">+38 044 111 11 11</a>
+
+					<button type="button" class="mob-connect-btn btn js-open-modal" data-modal="1">Online-booking</button>
 				</div>
+				<ul class="mob-soc__list">
+					<li class="mob-soc__item">
+						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Instagram</a>
+					</li>
+					<li class="mob-soc__item">
+						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc__link">Youtube</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<!-- Main -->
@@ -575,75 +567,45 @@
 			</div>
 		</footer> -->
 		<!-- modal -->
-		<!-- <div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button type="button" class="modal-close" data-modal-close>
-					<svg class="modal-icon-close" width="10" height="10">
-						<use href="./img/icons.svg#icon-btn-close"></use>
-					</svg>
-				</button>
-				<form class="online-modal">
-					<p class="online-modal-title">Online-booking</p>
-					<div class="online-field">
-						<input type="text" name="name" id="name-modal" class="input-online-modal online-modal-item" placeholder=" " />
-						<label for="name-modal" class="input-label">Name*</label>
-					</div>
-					<div class="online-field">
-						<input type="tel" name="tel-modal" id="tel-modal" class="input-online-modal online-modal-item" placeholder=" " />
-						<label for="tel-modal" class="input-label">Phone*</label>
-					</div>
-					<div class="online-field">
-						<textarea
-							name="online-message"
-							id="online-message-modal"
-							class="online-modal-item input-online-modal online-text"
-							placeholder=" "
-						></textarea>
 
-						<label for="online-message-modal" class="input-label">Message</label>
-					</div>
-					<button type="submit" class="online-btn btn">Send</button>
-				</form>
-			</div>
-		</div> -->
-		<div class="overlay js-overlay-modal">
-			<div class="modal" data-modal="1">
-				<button type="button" class="modal-close modal__cross js-modal-close">
-					<svg class="modal-icon-close" width="10" height="10">
-						<use href="./img/icons.svg#icon-btn-close"></use>
-					</svg>
-				</button>
-				<form class="online-modal">
-					<p class="online-modal-title">Online-booking</p>
-					<div class="online-field">
-						<input type="text" name="name" id="name-modal" class="input-online-modal online-modal-item" placeholder=" " />
-						<label for="name-modal" class="input-label">Name*</label>
-					</div>
-					<div class="online-field">
-						<input type="tel" name="tel-modal" id="tel-modal" class="input-online-modal online-modal-item" placeholder=" " />
-						<label for="tel-modal" class="input-label">Phone*</label>
-					</div>
-					<div class="online-field">
-						<textarea
-							name="online-message"
-							id="online-message-modal"
-							class="online-modal-item input-online-modal online-text"
-							placeholder=" "
-						></textarea>
+		<div class="modal modal-booking" data-modal="1">
+			<button type="button" class="modal-close js-modal-close">
+				<svg class="modal-icon-close" width="10" height="10">
+					<use href="./img/icons.svg#icon-btn-close"></use>
+				</svg>
+			</button>
+			<form class="online-modal">
+				<p class="online-modal-title">Online-booking</p>
+				<div class="online-field">
+					<input type="text" name="name" id="name-modal" class="input-online-modal online-modal-item" placeholder=" " />
+					<label for="name-modal" class="input-label">Name*</label>
+				</div>
+				<div class="online-field">
+					<input type="tel" name="tel-modal" id="tel-modal" class="input-online-modal online-modal-item" placeholder=" " />
+					<label for="tel-modal" class="input-label">Phone*</label>
+				</div>
+				<div class="online-field">
+					<textarea
+						name="online-message"
+						id="online-message-modal"
+						class="online-modal-item input-online-modal online-text"
+						placeholder=" "
+					></textarea>
 
-						<label for="online-message-modal" class="input-label">Message</label>
-					</div>
-					<button type="submit" class="online-btn btn">Send</button>
-				</form>
-			</div>
+					<label for="online-message-modal" class="input-label">Message</label>
+				</div>
+				<button type="submit" class="online-btn btn">Send</button>
+			</form>
 		</div>
 
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<div class="overlay js-overlay-modal"></div>
+
+		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
-		</script>
+		</script> -->
 		<!-- <script src="./js/modal.js"></script> -->
-		<script src="./js/menu.js"></script>
+		<!-- <script src="./js/menu.js"></script> -->
 		<script src="./js/modal2.js"></script>
 	</body>
 </html>
