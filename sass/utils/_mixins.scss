@@ -10,6 +10,17 @@
 	line-height: $lh;
 	letter-spacing: $ls;
 }
+
+@mixin flex($ai: center, $jc: center) {
+	display: flex;
+	align-items: $ai;
+	justify-content: $jc;
+}
+@mixin miniMobile {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
 @mixin mobile {
 	@media screen and (min-width: 480px) {
 		@content;

@@ -59,10 +59,10 @@
 				</button>
 				<nav class="mob-menu__nav">
 					<ul class="mob-menu__list">
-						<li class="mob-menu__item"><a href="#about" class="mob-menu__link">About</a></li>
-						<li class="mob-menu__item"><a href="#services" class="mob-menu__link">Services and prices</a></li>
-						<li class="mob-menu__item"><a href="#barbers" class="mob-menu__link">Barbers</a></li>
-						<li class="mob-menu__item"><a href="#contacts" class="mob-menu__link">Contacts</a></li>
+						<li class="mob-menu__item"><a href="#about" class="mob-menu__link js-modal-close">About</a></li>
+						<li class="mob-menu__item"><a href="#services" class="mob-menu__link js-modal-close">Services and prices</a></li>
+						<li class="mob-menu__item"><a href="#barbers" class="mob-menu__link js-modal-close">Barbers</a></li>
+						<li class="mob-menu__item"><a href="#contacts" class="mob-menu__link js-modal-close">Contacts</a></li>
 					</ul>
 				</nav>
 				<div class="mob-connect">
@@ -83,7 +83,7 @@
 		<!-- Main -->
 		<main>
 			<!-- Hero -->
-			<section class="hero">
+			<section class="hero section">
 				<div class="hero__container container">
 					<div class="hero__soc">
 						<ul class="hero__list">
@@ -103,7 +103,7 @@
 				</div>
 			</section>
 			<!-- About -->
-			<section class="about" id="about">
+			<section class="about section" id="about">
 				<div class="about__container container">
 					<ul class="about__photo">
 						<li>
@@ -154,7 +154,7 @@
 				</div>
 			</section>
 			<!-- Services and prices -->
-			<section class="prices" id="services">
+			<section class="prices section" id="services">
 				<div class="container">
 					<p class="pre-title pre-title--grey">Spend your time with the best masters</p>
 					<h2 class="prices__title">Services and prices</h2>
@@ -202,52 +202,37 @@
 				</div>
 			</section>
 			<!-- Benefits -->
-			<section class="benefits">
+			<section class="benefits section">
 				<div class="benefits__container container">
-					<div class="benefits-cards">
-						<ul class="benefits-list">
-							<li class="benefits-list__item">
-								<div class="benefits-list__top">
-									<span class="benefits-list__number">600</span>
-									<sup class="benefits-list__plus">+</sup>
-								</div>
-								<p class="benefits-list__text">Satisfied customers per day</p>
-							</li>
-
-							<li class="benefits-list__item">
-								<div class="benefits-list__top">
-									<span class="benefits-list__number">50</span>
-									<sup class="benefits-list__plus">+</sup>
-								</div>
-								<p class="benefits-list__text">Awards for excellent service</p>
-							</li>
-							<li class="benefits-list__item">
-								<div class="benefits-list__top">
-									<span class="benefits-list__number">20</span>
-									<sup class="benefits-list__plus">+</sup>
-								</div>
-								<p class="benefits-list__text">Kyiv’s best barbers</p>
-							</li>
-							<li class="benefits-list__item">
-								<div class="benefits-list__top">
-									<span class="benefits-list__number">100</span>
-									<sup class="benefits-list__plus">+</sup>
-								</div>
-								<p class="benefits-list__text">Gifts for regular customers</p>
-							</li>
-						</ul>
-					</div>
 					<div class="benefits__content">
-						<p class="pre-title pre-title--black">Old traditional school</p>
+						<p class="benefits__pre-title pre-title">Old traditional school</p>
 						<h2 class="benefits__title">Why people come to us?</h2>
-						<p class="after-title benefits__after-title">
+						<p class="benefits__after-title after-title">
 							Only good things are said about us. But it's better to see and feel 1 time than read 10 times.
 						</p>
 					</div>
+					<ul class="benefits__list list">
+						<li class="benefits__item">
+							<div class="benefits__item-top"><span>600</span><sup>+</sup></div>
+							<p class="benefits__item-text">Satisfied customers per day</p>
+						</li>
+						<li class="benefits__item">
+							<div class="benefits__item-top"><span>50</span><sup>+</sup></div>
+							<p class="benefits__item-text">Awards for excellent service</p>
+						</li>
+						<li class="benefits__item">
+							<div class="benefits__item-top"><span>20</span><sup>+</sup></div>
+							<p class="benefits__item-text">Kyiv’s best barbers</p>
+						</li>
+						<li class="benefits__item">
+							<div class="benefits__item-top"><span>100</span><sup>+</sup></div>
+							<p class="benefits__item-text">Gifts for regular customers</p>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<!-- Our barbers -->
-			<section class="barbers" id="barbers">
+			<section class="barbers section" id="barbers">
 				<div class="container">
 					<p class="pre-title barbers__pre-title pre-title--black">For true enjoyers of the atmosphere</p>
 					<h2 class="barbers__title">Our barbers</h2>
@@ -408,7 +393,7 @@
 				</div>
 			</section>
 			<!-- Portfolio -->
-			<section class="portfolio">
+			<section class="portfolio section">
 				<div class="container">
 					<h2 hidden>Portfolio</h2>
 					<p class="pre-title gallery-pre-title pre-title--black">In Latin, "barba" means "beard"</p>
@@ -430,7 +415,7 @@
 									type="image/jpg"
 									media="(max-width:767px)"
 								/>
-								<img src="./img/img-portfolio/portfolio-mob-1.jpg" alt="haircut" />
+								<img src="./img/img-portfolio/portfolio-mob-1.jpg" alt="haircut" width="418" />
 							</picture>
 						</li>
 						<li class="portfolio-list__item">
@@ -499,8 +484,8 @@
 			<!-- Contact -->
 			<div class="contact-wrap">
 				<div class="container">
-					<section class="online-booking" id="form-online">
-						<h2 class="title online-title">Online-booking</h2>
+					<section class="online-booking section" id="form-online">
+						<h2 class="title online__title">Online-booking</h2>
 						<form class="form-online">
 							<div class="online-field">
 								<input type="text" name="name" id="name" class="input-online online-item" placeholder=" " />
@@ -514,11 +499,11 @@
 								<textarea name="online-message" id="online-message" class="online-item input-online online-text" placeholder=" "></textarea>
 								<label for="online-message" class="input-label">Message</label>
 							</div>
-							<button type="submit" class="btn">Send</button>
+							<button type="submit" class="btn online__primary-btn">Send</button>
 						</form>
 					</section>
-					<section class="contact" id="contacts">
-						<h2 class="title">Contacts</h2>
+					<section class="contact section" id="contacts">
+						<h2 class="title contact__title">Contacts</h2>
 						<address class="contact__address">
 							<a href="https://goo.gl/maps/HPy8ZSEA6FNUYbvNA" target="_blank" rel="noopener noreferrer nofollow" class="contact__link">
 								<svg class="contact__icon" width="24" height="24">
@@ -545,8 +530,10 @@
 								</li>
 							</ul>
 						</address>
-						<p class="pre-title pre-title--white">Working hours</p>
-						<p class="contact__time">Every day from 9:00 to 22:00</p>
+						<div class="contacts-time-wrap">
+							<p class="pre-title pre-title--white">Working hours</p>
+							<p class="contact__time">Every day from 9:00 to 22:00</p>
+						</div>
 					</section>
 				</div>
 			</div>
@@ -566,6 +553,20 @@
 				</ul>
 			</div>
 		</footer> -->
+		<footer class="footer">
+			<div class="footer__container container">
+				<ul class="footer__soc-list soc-list list">
+					<li class="footer__soc-item--instagram footer__soc-item">
+						<a class="footer__soc-link link" href="https://www.instagram.com">Instagram</a>
+					</li>
+					<li class="footer__soc-item--youtube footer__soc-item">
+						<a class="footer__soc-link link" href="https://www.youtube.com/">Youtube</a>
+					</li>
+				</ul>
+				<p>&#169; Copyright 2020</p>
+			</div>
+		</footer>
+
 		<!-- modal -->
 
 		<div class="modal modal-booking" data-modal="1">

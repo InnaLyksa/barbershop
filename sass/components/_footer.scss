@@ -1,41 +1,42 @@
-.footer {
-	padding-top: 56px;
-	padding-bottom: 56px;
-}
 .footer__container {
-	@extend %flex-align;
-}
-.footer__copyright {
-	@include font(600, 11px, 1.36, 0.2em);
+	padding-top: 44px;
+	padding-bottom: 44px;
 
-	color: #9da4bd;
+	@include tablet {
+		padding-top: 56px;
+		padding-bottom: 56px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	@include desktop {
+	}
+
+	p {
+		@include font(600, 11, 1.36, 0.02);
+		display: block;
+		color: #9da4bd;
+		// align-self: flex-end;
+	}
 }
-.footer__list {
-	@extend %flex-align;
-	margin-left: auto;
+
+.footer__soc-list {
+	display: flex;
+	align-items: center;
+	justify-content: end;
 	gap: 40px;
+	@include font(600, 11, 1.36, 0.02);
+	color: $primary-text-color;
 
-	&::before {
+	@include mobile {
+		margin-bottom: 20px;
+	}
+
+	&:before {
 		content: "";
 		width: 60px;
 		height: 1px;
-		background-color: currentColor;
+		background-color: $primary-text-color;
 	}
 }
-
-.footer__link {
-	@extend %flex-align;
-	gap: 40px;
-
-	@include font(600, 11px, 1.36, 0.2em);
-
-	color: $primary-text-color;
-	
-	@include transition (color);
-	
-	&:hover,
-	&:focus {
-		color: $accent-text-color;
-	}
-}
-
