@@ -1,5 +1,6 @@
 .header {
-	position: absolute;
+	// position: absolute;
+	position: relative;
 	width: 100%;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -9,7 +10,7 @@
 	}
 	&__box {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 	}
 
 	&__list {
@@ -52,7 +53,7 @@
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
-	color: $second-text-color;
+	color: $primary-text-color;
 	@include transition(color);
 }
 
@@ -64,6 +65,9 @@
 .header__tel:focus,
 .header__tel:active {
 	color: $accent-text-color;
+}
+.header-btn {
+	color: $first-text-color;
 }
 @import "../layouts/modal";
 

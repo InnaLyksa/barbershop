@@ -1,52 +1,95 @@
-.hero {
-	padding-top: 0;
-	padding-bottom: 0;
-	@media screen and (max-width: 768px) {
-		padding-left: 0;
+// .hero {
+// 	padding-top: 0;
+// 	padding-bottom: 0;
+// 	@media screen and (max-width: 768px) {
+// 		padding-left: 0;
+// 		padding-right: 0;
+// 	}
+
+// 	&__container {
+// 		display: flex;
+// 		padding: 0;
+// 		width: 100%;
+// 		@include tablet {
+// 			padding-left: 40px;
+// 		}
+// 		@include desktop {
+// 			width: 1200px;
+// 			padding-left: 15px;
+// 			padding-right: 15px;
+// 		}
+// 	}
+// }
+.hero__container {
+	@include mobile {
+		padding: 0;
+	}
+
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
 		padding-right: 0;
 	}
 
-	&__container {
-		display: flex;
-		padding: 0;
-		width: 100%;
-		@include tablet {
-			padding-left: 40px;
-		}
-		@include desktop {
-			width: 1200px;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
+	@include desktop {
+		padding-right: 15px;
+	}
+}
+// .hero__wrapper {
+// 	position: relative;
+// 	background: #191c26;
+// }
+.hero__content {
+	position: absolute;
+	background: linear-gradient(rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+	pointer-events: none;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	@include mobile {
+		@include flex;
+		flex-direction: column;
+	}
+
+	@include tablet {
+		padding: 272px 111px 237px 111px;
+		flex-grow: 1;
+	}
+
+	@include desktop {
+		padding: 272px 100px 208px 100px;
 	}
 }
 
-.hero__content {
-	background-color: gray;
-	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-mob.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 210px 30px;
-	flex-grow: 1;
-	@include retina {
-		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-mob@2x.jpg);
-	}
-	@include tablet {
-		padding: 272px 111px 237px 124px;
-		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-tab.jpg);
-		@include retina {
-			background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-tab@2x.jpg);
-		}
-	}
-	@include desktop {
-		padding: 272px 100px 206px 100px;
-		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-desk.jpg);
-		@include retina {
-			background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-desk@2x.jpg);
-		}
-	}
-}
+// .hero__content {
+// 	// background-color: gray;
+// 	// background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-mob.jpg);
+// 	// background-position: center;
+// 	// background-repeat: no-repeat;
+// 	// background-size: cover;
+// 	padding: 210px 30px;
+// 	flex-grow: 1;
+// 	// @include retina {
+// 	// 	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-mob@2x.jpg);
+// 	// }
+// 	@include tablet {
+// 		padding: 272px 111px 237px 124px;
+// 		// background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-tab.jpg);
+// 		// @include retina {
+// 		// 	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-tab@2x.jpg);
+// 		// }
+// 	}
+// 	@include desktop {
+// 		padding: 272px 100px 206px 100px;
+// 		// background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-desk.jpg);
+// 		// @include retina {
+// 		// 	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider/slider-desk@2x.jpg);
+// 		// }
+// 	}
+// }
 .hero__soc {
 	display: none;
 	@include tablet {

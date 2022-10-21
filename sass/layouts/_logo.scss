@@ -7,7 +7,7 @@
 }
 
 .logo__icon {
-	fill: $second-text-color;
+	fill: $first-text-color;
 	@include tablet {
 		fill: $first-text-color;
 		@include transition(fill);

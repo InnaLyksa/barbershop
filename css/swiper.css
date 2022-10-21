@@ -1,0 +1,50 @@
+.swiper {
+  max-width: 480px;
+}
+@media screen and (min-width: 480px) {
+  .swiper {
+    max-width: 605px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper {
+    max-width: 1070px;
+  }
+}
+
+.button-prev,
+.button-next {
+  width: 60px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1;
+  color: rgba(157, 164, 189, 0.6);
+  border-bottom: solid 1px red;
+  margin-left: 50px;
+  display: inline-block;
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button-prev {
+  right: 104px;
+  bottom: 40px;
+}
+
+.button-next {
+  right: 20px;
+  bottom: 40px;
+  text-align: end;
+}
+
+.slide-picture {
+  width: 100%;
+}/*# sourceMappingURL=swiper.css.map */
