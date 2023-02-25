@@ -811,6 +811,66 @@ img {
   width: 100%;
 }
 
+.scroll-up-btn {
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+  bottom: 100px;
+  fill: #ff6b08;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .scroll-up-btn {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 767px) {
+  .scroll-up-btn {
+    right: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .scroll-up-btn {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .scroll-up-btn {
+    right: 40px;
+  }
+}
+.scroll-up-btn:hover, .scroll-up-btn:focus {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.is-show-btn {
+  opacity: 0.8;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.scroll-up-svg {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .scroll-up-svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .scroll-up-svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
