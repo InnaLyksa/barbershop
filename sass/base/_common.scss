@@ -13,6 +13,8 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 
+	min-width: 320px;
+
 	@include mobile {
 		width: 480px;
 	}

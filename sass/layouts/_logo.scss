@@ -1,13 +1,15 @@
 .logo {
 	margin-right: 62px;
+	margin-left: 35px;
 
 	@include desktop {
 		margin-right: 130px;
+		margin-left: 0;
 	}
 }
 
 .logo__icon {
-	fill: $first-text-color;
+	fill: $second-text-color;
 	@include tablet {
 		fill: $first-text-color;
 		@include transition(fill);

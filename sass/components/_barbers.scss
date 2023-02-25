@@ -6,7 +6,6 @@
 			padding-left: 138px;
 		}
 	}
-	
 
 	&__title {
 		@extend %title;
@@ -25,18 +24,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	
+
 	gap: 30px;
-	@media screen and (max-width: 1199px){
+	@media screen and (max-width: 1199px) {
 		gap: 64px;
 	}
 }
 
 .barbers-list__item {
+	// width: 100%;
 
-	
 	@include desktop {
-	width: calc((100% - 60px) / 3);
+		width: calc((100% - 60px) / 3);
 	}
 }
 .barbers-wrap {
