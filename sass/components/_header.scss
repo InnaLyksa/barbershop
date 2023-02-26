@@ -84,7 +84,8 @@
 
 .menu-nav-mobail.modal {
 	padding: 48px 40px 48px 40px;
-	width: 75%;
+	// width: 75%;
+	max-width: 337px;
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -94,7 +95,7 @@
 	background-color: yellow;
 	top: 0;
 	right: 0;
-	left: 0;
+	// left: 0;
 	transform: translateX(100%);
 }
 
@@ -187,4 +188,23 @@
 .mob-soc__link:focus,
 .mob-soc__link:active {
 	color: $accent-text-color;
+}
+.online-booking-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// text-align: center;
+	padding: 0 0;
+	min-width: 160px;
+	height: 40px;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
 }

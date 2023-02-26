@@ -306,9 +306,6 @@ img {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  /*  Установаем ширину окна  */
-  width: 100%;
-  height: 100%;
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
@@ -318,6 +315,7 @@ img {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 50; /* Должен быть выше чем у подложки*/
+  /*  Установаем ширину окна  */
 }
 
 /* Стили для активных классов подложки и окна */
@@ -328,24 +326,12 @@ img {
 }
 
 .modal-booking.modal {
+  max-width: 360px;
   width: 100%;
   height: 100vh;
   padding: 40px;
   border-radius: 10px;
-  background-color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .modal-booking.modal {
-    width: 500px;
-    height: 600px;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    -webkit-transition: min-height 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: min-height 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), min-height 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), min-height 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  background-color: #dfddd8;
 }
 
 .modal-close {
@@ -467,7 +453,7 @@ img {
 
 .menu-nav-mobail.modal {
   padding: 48px 40px 48px 40px;
-  width: 75%;
+  max-width: 337px;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -480,7 +466,6 @@ img {
   background-color: yellow;
   top: 0;
   right: 0;
-  left: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -598,6 +583,31 @@ img {
 .mob-soc__link:focus,
 .mob-soc__link:active {
   color: #ff6c00;
+}
+
+.online-booking-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0;
+  min-width: 160px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 
 .hero__wrapper {
