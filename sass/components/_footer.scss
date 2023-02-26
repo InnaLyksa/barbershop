@@ -1,6 +1,8 @@
 .footer__container {
 	padding-top: 44px;
 	padding-bottom: 44px;
+	padding-left: 31px;
+	padding-right: 31px;
 
 	@include tablet {
 		padding-top: 56px;
@@ -26,12 +28,9 @@
 	align-items: center;
 	justify-content: end;
 	gap: 40px;
+	margin-bottom: 20px;
 	@include font(600, 11, 1.36, 0.02);
 	color: $primary-text-color;
-
-	@include mobile {
-		margin-bottom: 20px;
-	}
 
 	&:before {
 		content: "";

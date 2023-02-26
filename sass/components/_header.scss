@@ -28,7 +28,7 @@
 			flex-direction: column-reverse;
 			align-items: center;
 			margin-left: auto;
-			margin-right: 20px;
+			margin-right: 10px;
 			gap: 20px;
 		}
 		@include desktop {
@@ -41,11 +41,14 @@
 		}
 	}
 }
+.header__box.container {
+	padding-right: 0;
+}
 .header__nav {
 	display: none;
 	@include tablet {
 		display: flex;
-		margin-left: auto;
+		// margin-left: auto;
 	}
 	@include desktop {
 		margin-left: 0;
@@ -90,7 +93,7 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-between;
+	justify-content: space-between;
 	// background-color: $second-text-color;
 	background-color: yellow;
 	top: 0;
@@ -163,6 +166,7 @@
 .mob-soc__list {
 	position: relative;
 	padding-left: 100px;
+	margin-top: 30px;
 }
 .mob-soc__list::before {
 	content: "";
@@ -207,4 +211,9 @@
 	border-radius: 25px;
 	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
+}
+.online-booking-link--black {
+	color: black;
+	width: 100px;
+	margin-top: 20px;
 }

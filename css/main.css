@@ -50,6 +50,8 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -192,7 +194,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 10px;
     gap: 20px;
   }
 }
@@ -214,6 +216,10 @@ img {
   }
 }
 
+.header__box.container {
+  padding-right: 0;
+}
+
 .header__nav {
   display: none;
 }
@@ -222,7 +228,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -232,7 +237,7 @@ img {
 }
 
 .logo {
-  margin-right: 62px;
+  margin-right: 55px;
   margin-left: 35px;
 }
 @media screen and (min-width: 1200px) {
@@ -463,6 +468,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: yellow;
   top: 0;
   right: 0;
@@ -553,6 +561,7 @@ img {
 .mob-soc__list {
   position: relative;
   padding-left: 100px;
+  margin-top: 30px;
 }
 
 .mob-soc__list::before {
@@ -608,6 +617,12 @@ img {
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
+}
+
+.online-booking-link--black {
+  color: black;
+  width: 100px;
+  margin-top: 20px;
 }
 
 .hero__wrapper {
@@ -687,7 +702,20 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding-left: 40px;
+    padding-left: 90px;
+    padding-bottom: 58px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__soc {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 35px;
     padding-bottom: 58px;
   }
 }
@@ -823,7 +851,7 @@ img {
 
 .scroll-up-btn {
   position: fixed;
-  z-index: 100;
+  z-index: 20;
   opacity: 0;
   bottom: 100px;
   fill: #ff6b08;
@@ -1681,6 +1709,8 @@ img {
 .footer__container {
   padding-top: 44px;
   padding-bottom: 44px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -1718,16 +1748,12 @@ img {
       -ms-flex-pack: end;
           justify-content: end;
   gap: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11;
   line-height: 1.36;
   letter-spacing: 0.02;
   color: #303030;
-}
-@media screen and (min-width: 480px) {
-  .footer__soc-list {
-    margin-bottom: 20px;
-  }
 }
 .footer__soc-list:before {
   content: "";
