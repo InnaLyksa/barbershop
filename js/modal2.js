@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             подложке и окну чтобы показать их. */
 			modalElem.classList.add("active");
 			overlay.classList.add("active");
+			switchScrollBody("hidden");
 		}); // end click
 	}); // end foreach
 
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			parentModal.classList.remove("active");
 			overlay.classList.remove("active");
+			switchScrollBody("scroll");
 		});
 	}); // end foreach
 
@@ -63,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			if (key == 27) {
 				document.querySelector(".modal.active").classList.remove("active");
 				document.querySelector(".overlay").classList.remove("active");
+				switchScrollBody("scroll");
 			}
 		},
 		false,
@@ -71,5 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	overlay.addEventListener("click", function () {
 		document.querySelector(".modal.active").classList.remove("active");
 		this.classList.remove("active");
+		switchScrollBody("scroll");
 	});
 }); // end ready
+
+const switchScrollBody = state => {
+	Object.assign(document.body.style, {
+		overflowY: state,
+	});
+};

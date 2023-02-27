@@ -42,17 +42,19 @@
 				</nav>
 				<div class="header__link">
 					<a href="tel:+380441111111" class="header__tel">+38 044 111 11 11</a>
-					<!-- <button type="button" class="btn js-open-modal header-btn" data-modal="1">Online-booking</button> -->
+					
 					<a href="#form-online" class="online-booking-link">Online-booking</a>
 				</div>
 
-				<button class="menu-button js-open-modal" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-modal="2">
+				<button class="menu-button js-open-modal" data-action="open-modal" type="button" aria-expanded="false" aria-controls="menu-conteiner" data-modal="2">
 					<svg class="menu" width="40px" height="40px" aria-label="Перемикач мобільного меню">
 						<use class="icon-menu" href="./img/icons.svg#icon-menu_40px-3"></use>
 					</svg>
 				</button>
 			</div>
 			<!-- Mобільного меню -->
+			
+
 
 			<div class="menu-nav-mobail modal" data-modal="2">
 				<button class="menu-button-close js-modal-close" type="button">
@@ -69,9 +71,9 @@
 					</ul>
 				</nav>
 				<div class="mob-connect">
-					<a href="tel:+380441111111" class="mob-menu__tel">+38 044 111 11 11</a>
+					<a href="tel:+380441111111" class="mob-menu__tel">+38 044 111 11 11</a> -->
 
-					<!-- <button type="button" class="mob-connect-btn btn js-open-modal js-modal-close" data-modal="1">Online-booking</button> -->
+					
 					<a href="#form-online" class="online-booking-link online-booking-link--black js-modal-close">Online-booking</a>
 				</div>
 				<ul class="mob-soc__list">
@@ -83,6 +85,7 @@
 					</li>
 				</ul>
 			</div>
+
 		</header>
 		<!-- Main -->
 		<main>
@@ -192,9 +195,11 @@
 							always ready to improve everyone who comes to us!
 						</p>
 
-						<button type="button" class="btn btn--black js-open-modal" data-modal="1">Online-booking</button>
+						
+						<a href="#form-online" class="online-booking-link online-booking-link--black ">Online-booking</a>
+				</div>
 
-						<!-- href="#form-online" -->
+					
 					</div>
 				</div>
 			</section>
@@ -242,8 +247,10 @@
 						</ul>
 					</div>
 
-					<button type="button" class="prices__btn btn js-open-modal" data-modal="1">Online-booking</button>
-					<!-- href="#form-online" -->
+					
+					<a href="#form-online" class="online-booking-link">Online-booking</a>
+				</div>
+					
 				</div>
 			</section>
 			<!-- Benefits -->
@@ -600,37 +607,6 @@
 			</div>
 		</footer>
 
-		<!-- modal -->
-
-		<div class="modal modal-booking" data-modal="1">
-			<button type="button" class="modal-close js-modal-close">
-				<svg class="modal-icon-close" width="10" height="10">
-					<use href="./img/icons.svg#icon-btn-close"></use>
-				</svg>
-			</button>
-			<form class="online-modal">
-				<p class="online-modal-title">Online-booking</p>
-				<div class="online-field">
-					<input type="text" name="name" id="name-modal" class="input-online-modal online-modal-item" placeholder=" " />
-					<label for="name-modal" class="input-label">Name*</label>
-				</div>
-				<div class="online-field">
-					<input type="tel" name="tel-modal" id="tel-modal" class="input-online-modal online-modal-item" placeholder=" " />
-					<label for="tel-modal" class="input-label">Phone*</label>
-				</div>
-				<div class="online-field">
-					<textarea
-						name="online-message"
-						id="online-message-modal"
-						class="online-modal-item input-online-modal online-text"
-						placeholder=" "
-					></textarea>
-
-					<label for="online-message-modal" class="input-label">Message</label>
-				</div>
-				<button type="submit" class="online-btn btn ">Send</button>
-			</form>
-		</div>
 		<div class="scroll-up-btn is-show-btn">
   <svg class="scroll-up-svg">
     <use href="./img/icons.svg#icon-circle-up"></use>
@@ -643,8 +619,7 @@
 		<script>
 			AOS.init();
 		</script>
-		<!-- <script src="./js/modal.js"></script> -->
-		<!-- <script src="./js/menu.js"></script> -->
+		
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		
 		<script src="./js/swiper.js"></script>
